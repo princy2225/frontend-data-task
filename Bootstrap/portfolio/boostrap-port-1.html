@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark py-3">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Portfolio
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="portfolioDropdown">
+                            <li><a class="dropdown-item" href="#Education">Education</a></li>
+                            <li><a class="dropdown-item" href="#Skills">Skills</a></li>
+                            <li><a class="dropdown-item" href="#Technical Skills">Technical Skills</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-us">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-5">
+        <div class="container">
+            <h2 class="mb-4">My Work</h2>
+            <div class="row">
+                <!-- Portfolio Item 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://t3.ftcdn.net/jpg/06/45/64/94/360_F_645649445_0jTTe6SjWZ2miVce9YEZcSbMfVHHQuiX.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title" id="Education">Education</h5>
+                            <p class="card-text">SSC Board, Diploma in IT Engineering.</p>
+                            <button class="btn btn-success">View</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio Item 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://t4.ftcdn.net/jpg/06/43/68/65/360_F_643686558_Efl6HB1ITw98bx1PdAd1wy56QpUTMh47.jpg" class="card-img-top"  alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title" id="Skills">Skills</h5>
+                            <p class="card-text">Dance, Cooking, Scrolling Instagram, Reading.</p>
+                            <button class="btn btn-success">View</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio Item 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://t3.ftcdn.net/jpg/06/44/59/32/360_F_644593291_1GATHErahv8Hup0De00sSWj1SllTGjY3.jpg" class="card-img-top" alt="Project 3" style="height: 415px;">
+                        <div class="card-body">
+                            <h5 class="card-title" id="Technical Skills">Technical Skills</h5>
+                            <p class="card-text">HTML, CSS, Bootstrap.</p>
+                            <button class="btn btn-success">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="row mt-5">
+                <!-- On medium devices and larger:
+               Push the column 3 columns to the right. Creates spacing before (left side) of the element -->
+                <div class="col-md-6 offset-md-3">
+                    <h3 id="contact-us" class="text-center text-decoration-underline mb-4 text-success">Contact Us</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label fs-5">Name :</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label fs-5">Email :</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label fs-5">Message :</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
