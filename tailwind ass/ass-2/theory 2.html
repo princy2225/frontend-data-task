@@ -1,0 +1,54 @@
+<!-- Que-1 Describe how to create responsive designs using Tailwind’s breakpoints
+
+  A: Tailwind uses a mobile-first responsive design system.
+     You style for mobile by default, and apply changes for larger devices using breakpoint prefixes.
+
+     * Default Tailwind Breakpoints
+     Prefix	 Min Width	Device Type
+         sm:	640px	Small devices
+         md:	768px	Tablets
+         lg:	1024px	Laptops
+         xl:	1280px	Desktops
+         2xl:	1536px	Large screens 
+         
+     * Responsive Text:
+        <h1 class="text-xl sm:text-2xl md:text-4xl lg:text-5xl"> Responsive Heading </h1>
+
+     * Responsive Layouts:
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">...
+       </div>
+    -->
+
+<!-- Que-2 Discuss using custom colors and spacing with Tailwind configuration
+
+   A: You can add your own colors, spacing, and other design tokens in tailwind.config.js.
+     1. Custom Colors
+
+       In tailwind.config.js:
+
+      theme: {
+        extend: {
+          colors: {
+            primary: "#4f46e5",
+            brandDark: "#1e293b",
+            softPink: "#ffb6c1",
+          },
+        },
+      } 
+    
+     USE:   <div class="bg-primary text-white">Button</div>
+            <div class="text-softPink">Hello</div>
+
+        2. Custom Spacing
+
+        Spacing controls padding, margin, gap, width, height, etc.
+
+        extend: {
+          spacing: {
+            18: "4.5rem",
+            128: "32rem",
+      },
+        }
+    
+     USE:   <div class="p-18 mb-128">Content</div>
+  -->

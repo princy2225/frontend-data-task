@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login Page Layout</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-linear-to-r from-red-300 to-green-200 flex items-center justify-center min-h-screen">
+    
+    <div class="max-w-md w-full mx-auto mt-5 bg-white shadow-lg rounded-lg overflow-hidden p-8 border-2 border-gray-300">
+       <h1 class="text-3xl text-center font-bold mb-5">Login</h1>
+
+       <form class="space-y-3">
+        <div>
+<!-- Email -->
+         <label class="block mb-2 text-md font-medium text-gray-700" for="email">Email *</label>
+         <input class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" type="email" id="email" placeholder="Enter your email" required>
+         </div>
+
+<!-- Password -->
+         <div>
+            <label class="block mb-2 text-md font-medium text-gray-700" for="Password">Password *</label>
+            <input class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" type="password" id="Password" placeholder="Enter your password" required>
+         </div>
+
+<!-- Button -->
+          <button type="submit" class="w-full bg-blue-500 text-white hover:bg-blue-700 rounded-lg font-semibold p-3 transition duration-150 shadow-md cursor-pointer">Login</button>
+
+<!-- Forgot password -->
+            <p class="text-center mt-4 text-gray-600">Forgot your <a href="#" class="text-blue-500 hover:underline">password?</a></p>
+       </form>
+    </div>
+</body>
+</html>

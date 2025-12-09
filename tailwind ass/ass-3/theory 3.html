@@ -1,0 +1,108 @@
+<!-- Que-1 Purpose of Flexbox & Its Benefits for Responsive Design
+ 
+    A: Purpose of Flexbox
+
+    Flexbox (Flexible Box Layout) is a one-dimensional layout system in CSS used to arrange items horizontally or vertically.
+    Its main goal is to make it easier to create flexible, responsive, and well-aligned layouts without using floats, tables, or manual calculations.
+
+  * Benefits for Responsive Design
+
+    ✔ Automatic space adjustment
+    Flexbox adjusts items based on screen size—no need for complex media queries.
+
+    ✔ Easy horizontal & vertical alignment
+    Centering or spacing elements becomes very simple (e.g., justify-center, items-center in Tailwind).
+
+    ✔ Reordering elements without changing HTML
+    With order, you can rearrange items for different screen sizes.
+
+    ✔ Flexible item sizing
+    tems can shrink, grow, and wrap automatically based on available space.
+
+    ✔ Great for navigation bars, forms, cards, layouts
+    It's designed to handle common responsive UI patterns.-->
+
+<!-- Que-2 Main Flexbox Properties :
+
+    (These apply to the flex container) 
+    
+           A) flex-direction
+       Controls direction of items along the main axis.
+
+       Values:
+
+       row (default) → left to right
+       row-reverse → right to left
+       column → top to bottom
+       column-reverse → bottom to top
+       ➡️ Decides whether items line up horizontally or vertically.
+       
+          B) justify-content
+       Controls alignment of items on the main axis (horizontal if row, vertical if column).
+
+       Common values:
+
+       flex-start → items start of the main axis
+       center → items centered
+       flex-end → items at end
+       space-between → equal gaps between items
+       space-around → equal space around items
+       space-evenly → equal spacing everywhere
+       ➡️ Used for spacing items like navbar links.
+       
+       C) align-items
+      Controls alignment on the cross axis (vertical if row, horizontal if column).
+
+       Common values:
+
+       flex-start
+       center
+       flex-end
+       stretch (default, items stretch to container height)
+       ➡️ Used for vertical alignment inside a row.-->       
+
+<!-- Que-3 Difference Between flex-grow, flex-shrink & flex-basis
+
+     (These apply to the flex items, not the container.)
+     
+     A) flex-grow
+      Controls how much an item expands to fill available extra space.
+
+      Example:
+
+      flex-grow: 1;
+      → Item grows and takes available free space.
+      0 = no growth (default)
+      
+      B) flex-shrink
+      Controls how much an item shrinks when space is small.
+
+      Example:
+
+      flex-shrink: 1;
+      → Item shrinks when the container is too small.
+      0 = item will NOT shrink.
+
+      C) flex-basis
+      Defines the initial size of the item before grow/shrink is applied.
+
+      Examples:
+      flex-basis: 200px;
+      flex-basis: 30%;
+      Acts similar to setting a width, but more flexible in flexbox.
+
+      In Simple Words:
+      Property	             Meaning	                     When it works
+      flex-grow         How much item grows	              When space is extra
+      flex-shrink	    How much item shrinks	          When space is less
+      flex-basis	    Default starting size	            Always
+      Quick Example
+
+      If items have:
+
+      .item1 { flex: 1; }
+      .item2 { flex: 2; }
+
+      flex-grow distributes extra space → item2 is twice item1
+      flex-shrink applies when screen shrinks
+      flex-basis defaults to 0 unless specified-->

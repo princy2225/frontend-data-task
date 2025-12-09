@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Table</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    
+    <section class="py-16 bg-gray-100">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-12 animate-bounce">Our Pricing Plans</h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      
+<!-- Basic Plan -->
+      <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition">
+        <h3 class="text-2xl font-bold mb-4 text-gray-800">Basic</h3>
+        <p class="text-4xl font-extrabold mb-4">$19<span class="text-base font-medium text-gray-500">/mo</span></p>
+        <p class="text-gray-600 mb-6">Ideal for individuals starting their journey.</p>
+  <!-- space-y-3 = Add vertical (Y-axis) space of 0.75rem (12px) between each child element -->
+        <ul class="space-y-3 mb-6 text-gray-700">
+          <li>✔ 5 Projects</li>
+          <li>✔ Basic Support</li>
+          <li>✔ 10GB Storage</li>
+        </ul>
+
+        <button class="w-full py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">Get Started</button>
+      </div>
+
+<!-- Standard Plan -->
+     <!-- scale -> transform: scale(1.05); -->
+      <div class="bg-blue-600 text-white p-8 rounded-2xl shadow-xl hover:shadow-2xl scale-105 transition">
+        <h3 class="text-2xl font-bold mb-4">Standard</h3>
+        <p class="text-4xl font-extrabold mb-4">$49<span class="text-base font-medium">/mo</span></p>
+        <p class="text-lg mb-6">Perfect for small teams and growing businesses.</p>
+
+        <ul class="space-y-3 mb-6">
+          <li>✔ 20 Projects</li>
+          <li>✔ Priority Support</li>
+          <li>✔ 100GB Storage</li>
+        </ul>
+
+        <button class="w-full py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-100 transition"> Choose Plan</button>
+      </div>
+
+<!-- Premium Plan -->
+      <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition">
+        <h3 class="text-2xl font-bold mb-4 text-gray-800">Premium</h3>
+        <p class="text-4xl font-extrabold mb-4">$99<span class="text-base font-medium text-gray-500">/mo</span></p>
+        <p class="text-gray-600 mb-6"> Best for enterprises and large-scale operations.</p>
+
+        <ul class="space-y-3 mb-6 text-gray-700">
+          <li>✔ Unlimited Projects</li>
+          <li>✔ 24/7 Dedicated Support</li>
+          <li>✔ 1TB Storage</li>
+        </ul>
+
+        <button class="w-full py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition"> Subscribe</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

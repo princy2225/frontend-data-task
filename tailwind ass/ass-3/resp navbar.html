@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Responsive Navbar</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-50">
+    
+    <nav class="bg-gray-800 text-white px-5 py-6">
+      <div class="flex justify-between items-center">
+    <!-- logo -->
+     <h1 class="text-xl font-bold">My Site</h1>
+
+     <!-- button togg -->
+       <button class="md:hidden text-2xl" onclick="toggleMenu()">☰</button>
+
+      <!-- nav link -->
+       <div id="navlink" class="hidden md:flex gap-8">
+          <a href="#" class="hover:text-gray-300">Home</a>
+          <a href="#" class="hover:text-gray-300">About</a>
+          <a href="#" class="hover:text-gray-300">Services</a>
+          <a href="#" class="hover:text-gray-300">Contact</a>
+       </div>
+      </div>
+
+      <!-- mobile view -->
+        <div id="mobileMenu" class="md:hidden hidden flex-col mt-3 space-y-2">
+          <a href="#" class=" block rounded py-2 px-3 hover:text-gray-700">Home</a>
+          <a href="#" class=" block rounded py-2 px-3 hover:text-gray-700">About</a>
+          <a href="#" class=" block rounded py-2 px-3 hover:text-gray-700">Services</a>
+          <a href="#" class=" block rounded py-2 px-3 hover:text-gray-700">Contact</a>
+       </div>
+    </nav>
+
+    <script>
+function toggleMenu() {
+  document.getElementById("mobileMenu").classList.toggle("hidden");
+}
+</script>
+
+</body>
+</html>

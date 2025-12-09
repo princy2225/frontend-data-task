@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Responsive Webpage</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body  class="bg-gray-100 text-gray-800">
+
+<!-- Navbar -->
+    <nav class="bg-linear-to-r from-pink-300 to-yellow-600 text-white shadow-md">
+        <div class="container mx-auto px-4 py-5 flex justify-between text-center">
+            <h1 class="text-3xl font-bold">My Website</h1>
+
+            <ul class="hidden md:flex gap-6 text-lg">
+                <li><a href="#" class="hover:text-black">Home</a></li>
+                <li><a href="#" class="hover:text-black">About</a></li>
+                <li><a href="#" class="hover:text-black">Services</a></li>
+                <li><a href="#" class="hover:text-black">Contact</a></li>
+            </ul>
+
+<!-- Mobile Menu Button -->
+            <button class="md:hidden text-2xl">&#9776;</button>
+        </div>
+    </nav>
+
+<!-- Hero Section -->
+    <section class="bg-blue-200 text-black py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl md:text-4xl font-bold mb-4">Welcome to My Tailwind Page</h2>
+            <p class="text-lg md:text-xl mb-6">Modern, fast, and fully responsive using utility-first CSS.</p>
+
+            <button class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg shadow border border-transparent hover:border-blue-500 transition">
+                Get Started
+            </button>
+        </div>
+    </section>
+
+<!-- About Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+            <img src="https://techbrainism.com/wp-content/uploads/2021/05/istock-827896866.jpg"
+                class="rounded-lg shadow-lg w-full" alt="website image">
+
+            <div>
+        <!-- bg-clip-text: means the background gradient or background color will only appear inside the text letters, not behind them.
+             text-transparent makes the real text color invisible. -->
+                <h3 class="text-3xl font-bold mb-4 bg-linear-to-r from-blue-500 to-green-500 
+       bg-clip-text text-transparent">About Our Website</h3>
+                <p class="text-gray-700 leading-relaxed mb-4 italic"> This webpage is redesigned using Tailwind CSS. It uses utility classes for better layout control,spacing, responsiveness, and styling without writing custom CSS.</p>
+
+        <!-- leading-relaxed: slightly increase line-height -->
+                <p class="text-gray-700 leading-relaxed"> Tailwind makes it easy to create professional designs quickly and efficiently, using responsive breakpoints like <span class="font-semibold text-blue-600">sm, md, lg, xl</span>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+<!-- Services Section -->
+    <section class="bg-gray-50 py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-3xl font-bold mb-10 animate-pulse">Our Services</h3>
+
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="bg-white shadow-lg p-6 rounded-xl">
+                    <h4 class="text-xl font-bold mb-2">Web Design</h4>
+                    <p>Create beautiful designs using Tailwind CSS utilities.</p>
+                </div>
+
+                <div class="bg-white shadow-lg p-6 rounded-xl">
+                    <h4 class="text-xl font-bold mb-2">Responsive Layouts</h4>
+                    <p>Built with mobile-first responsive classes.</p>
+                </div>
+
+                <div class="bg-white shadow-lg p-6 rounded-xl">
+                    <h4 class="text-xl font-bold mb-2">Fast Development</h4>
+                    <p>Utility-first workflow speeds up your work.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Contact Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4 max-w-xl">
+            <h3 class="text-3xl font-bold text-center mb-8">Contact Us</h3>
+
+            <form class="bg-white shadow-lg p-8 rounded-xl space-y-4">
+                <input type="text" placeholder="Your Name"
+                    class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500" required/>
+
+                <input type="email" placeholder="Your Email"
+                    class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500" required/>
+
+                <input type="phone" placeholder="Phone Number"
+                    class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500" required/>
+    
+                <textarea placeholder="Your Message" rows="4"
+                    class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500" required></textarea>
+
+                <button
+                    class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+<!-- Footer -->
+    <footer class="bg-black text-white text-center py-6 mt-10">
+        <p class="text-lg">© 2025 My Website. All rights reserved.</p>
+    </footer>
+
+    
+</body>
+</html>
